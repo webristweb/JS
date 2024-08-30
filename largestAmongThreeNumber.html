@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Using Math.max() method.
+        // Using user defined method.
+        // Math.max() return the largest number
+        // amon the provider numbers
+        //  Syntax: Math.max(n1,n2,n3);
+
+        function check(p, q, r) {
+            if (p >= q && p >= r) {
+                return p;
+            } else if (q >= p && q >= r) {
+                return q;
+            } else {
+                return r;
+            }
+
+        }
+
+        var a = prompt("Please enter the first number");
+        var b = prompt("Please enter the second number");
+        var c = prompt("Please enter the third number");
+        var x = check(a, b, c);
+        document.write(`${a},${b},${c}: Largest = ${x}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function check() {
+            var value = document.getElementById("data").value;
+            var number = Number(value);
+            var res;
+
+            if (isNaN(number)) {
+                res = `${value} is Not A Number`;
+            } else if (number > 0) {
+                res = `${number} is a Positive Number`;
+            } else if (number < 0) {
+                res = `${number} is a Negative Number`;
+            } else {
+                res = `${number} is Zero`;
+            }
+
+            document.getElementById("res").innerText = res;
+        }
+    </script>
+
+    <input type="text" id="data" placeholder="Enter a number" />
+    <br>
+    <button onclick="check()">Check</button>
+    <h1 id="res"></h1>
+</body>
+
+</html>
